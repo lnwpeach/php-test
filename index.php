@@ -15,7 +15,7 @@ $aa = http_build_query($revise);
 echo "aa: ".$aa;
 echo "<br><br>";
 
-$aa = __DIR__;
+$aa = date("c", strtotime('2020-09-18'));
 echo "aa: ".$aa;
 echo "<br><br>";
 
