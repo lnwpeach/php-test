@@ -10,12 +10,16 @@ echo "<br><br>";
 
 echo '<h3>Test</h3>';
 
+$aa = strtolower("THB");
+echo "aa: ".$aa;
+echo "<br><br>";
+
 $revise = ['page' => 1, 'per_page' => 50];
 $aa = http_build_query($revise);
 echo "aa: ".$aa;
 echo "<br><br>";
 
-$aa = date("c", strtotime('2020-09-18'));
+$aa = date("c");
 echo "aa: ".$aa;
 echo "<br><br>";
 
