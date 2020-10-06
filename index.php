@@ -10,12 +10,6 @@ echo "<br><br>";
 
 echo '<h3>Test</h3>';
 
-echo uniqid('', true).'<br>';
-echo uniqid('', true).'<br>';
-echo uniqid('', true).'<br>';
-echo uniqid('', true).'<br>';
-echo "<br><br>";
-
 $revise = ['page' => 1, 'per_page' => 50];
 $aa = http_build_query($revise);
 echo "aa: ".$aa;
@@ -24,10 +18,12 @@ echo "<br><br>";
 $aa = date("c");
 echo "aa: ".$aa;
 echo "<br><br>";
+echo '<hr>';
 
+echo '<h3>Variable</h3>';
+echo '__DIR__: '.__DIR__.'<br>';
 echo 'DOCUMENT_ROOT: '.$_SERVER['DOCUMENT_ROOT'].'<br>';
 echo 'REQUEST_URI: '.$_SERVER['REQUEST_URI'].'<br>';
-
 echo '<hr>';
 
 echo '<h3>mt_rand</h3>';
