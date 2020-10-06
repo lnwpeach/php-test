@@ -10,7 +10,7 @@ fclose($myfile);
 
 exec("git -C {$dir}/.. add -A");
 exec("git -C {$dir}/.. commit -m 'cron test {$dt}'");
-exec("git -C {$dir}/.. push github master");
+exec("git -C {$dir}/.. push origin master");
 
 echo 'Success';
 
