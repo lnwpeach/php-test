@@ -8,8 +8,9 @@ $dt = date("Y-m-d H:i:s");
 fwrite($myfile, $dt);
 fclose($myfile);
 
+$dt2 = date("Y-m-d_H:i:s");
 exec("git -C {$dir}/.. add -A");
-exec("git -C {$dir}/.. commit -m 'cron test {$dt}'");
+exec("git -C {$dir}/.. commit -m 'crontest_{$dt2}'");
 exec("git -C {$dir}/.. push origin master");
 
 echo 'Success';
