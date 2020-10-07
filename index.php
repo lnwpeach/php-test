@@ -10,6 +10,10 @@ echo "<br><br>";
 
 echo '<h3>Test</h3>';
 
+$aa = chr(500000);
+echo "aa: ".$aa;
+echo "<br><br>";
+
 $revise = ['page' => 1, 'per_page' => 50];
 $aa = http_build_query($revise);
 echo "aa: ".$aa;
@@ -50,7 +54,7 @@ echo 'uniqid: '.$ranid.'<br>';
 
 echo '<br>';
 echo 'sha256<br>';
-$salt = '$5$rounds=8167$'.$ranid;
+$salt = '$5$rounds=6139$'.$ranid;
 echo 'salt: '.$salt.'<br>';
 $aa = crypt('1234', $salt);
 echo $aa.'<br>';
@@ -60,7 +64,7 @@ echo '<br>';
 
 echo '<br>';
 echo 'sha512<br>';
-$salt = '$6$rounds=8167$'.$ranid;
+$salt = '$6$rounds=6139$'.$ranid;
 echo 'salt: '.$salt.'<br>';
 $aa = crypt('1234', $salt);
 echo $aa.'<br>';
