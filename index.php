@@ -25,6 +25,8 @@ echo "<br><br>";
 echo '<hr>';
 
 echo '<h3>Variable</h3>';
+echo 'php_uname(): '.php_uname().'<br>';
+echo 'PHP_OS: '.PHP_OS.'<br>';
 echo '__DIR__: '.__DIR__.'<br>';
 echo 'DOCUMENT_ROOT: '.$_SERVER['DOCUMENT_ROOT'].'<br>';
 echo 'REQUEST_URI: '.$_SERVER['REQUEST_URI'].'<br>';
