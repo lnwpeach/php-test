@@ -10,19 +10,9 @@ echo "<br><br>";
 
 echo '<h3>Test</h3>';
 
-$aa = chr(500000);
+$aa = "aaaa";
 echo "aa: ".$aa;
 echo "<br><br>";
-
-$revise = ['page' => 1, 'per_page' => 50];
-$aa = http_build_query($revise);
-echo "aa: ".$aa;
-echo "<br><br>";
-
-$aa = date("c");
-echo "aa: ".$aa;
-echo "<br><br>";
-echo '<hr>';
 
 echo '<h3>Variable</h3>';
 echo 'php_uname(): '.php_uname().'<br>';
