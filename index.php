@@ -46,7 +46,6 @@ echo "<br><br>";
 $aa = date("c");
 echo "aa: ".$aa;
 echo "<br><br>";
-echo '<hr>';
 
 echo '<h3>Variable</h3>';
 echo 'php_uname(): '.php_uname().'<br>';
