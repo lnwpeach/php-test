@@ -10,8 +10,32 @@ echo "<br><br>";
 
 echo '<h3>Test</h3>';
 
-$aa = chr(500000);
-echo "aa: ".$aa;
+$aa = [['aa' => 1], ['aa' => 2]];
+foreach($aa as &$item) {
+    $item['bb'] = 10;
+}
+
+$bb = [['aa' => 1], ['aa' => 2]];
+foreach($bb as &$item) {
+    $item['bb'] = 11;
+}
+
+$cc = $bb;
+$cc[]['cc'] = 12;
+
+$a = [];
+$a = array();
+
+$a[] = 1;
+array_push($a, 1);
+
+echo '<pre>';
+print_r($aa);
+echo '</pre>';
+echo '<pre>';
+print_r($bb);
+print_r($cc);
+echo '</pre>';
 echo "<br><br>";
 
 $revise = ['page' => 1, 'per_page' => 50];
