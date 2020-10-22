@@ -10,43 +10,6 @@ echo "<br><br>";
 
 echo '<h3>Test</h3>';
 
-$aa = [['aa' => 1], ['aa' => 2]];
-foreach($aa as &$item) {
-    $item['bb'] = 10;
-}
-
-$bb = [['aa' => 1], ['aa' => 2]];
-foreach($bb as &$item) {
-    $item['bb'] = 11;
-}
-
-$cc = $bb;
-$cc[]['cc'] = 12;
-
-$a = [];
-$a = array();
-
-$a[] = 1;
-array_push($a, 1);
-
-echo '<pre>';
-print_r($aa);
-echo '</pre>';
-echo '<pre>';
-print_r($bb);
-print_r($cc);
-echo '</pre>';
-echo "<br><br>";
-
-$revise = ['page' => 1, 'per_page' => 50];
-$aa = http_build_query($revise);
-echo "aa: ".$aa;
-echo "<br><br>";
-
-$aa = date("c");
-echo "aa: ".$aa;
-echo "<br><br>";
-
 echo '<h3>Variable</h3>';
 echo 'php_uname(): '.php_uname().'<br>';
 echo 'PHP_OS: '.PHP_OS.'<br>';
@@ -61,7 +24,7 @@ echo mt_rand().'<br>';
 echo ((float)mt_rand()/(float)getrandmax()*100).'<br>';
 echo '<hr>';
 
-echo '<h3>hash 1234</h3>';
+echo '<h3>hash</h3>';
 $aa = hash('md5', '1234');
 echo 'md5: '.$aa.'<br>';
 $aa = hash('sha256', '1234');
