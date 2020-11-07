@@ -1,6 +1,4 @@
 <?php
-// $pdo2 = new PDO("mysql:host=localhost;dbname=vayo2", "root", "12345878");
-
 /*
 $aa = "aaaa";
 echo "aa: ".$aa;
@@ -9,6 +7,7 @@ echo "<br><br>";
 
 
 echo '<h3>Test</h3>';
+echo "<a href='gen-code.php'>Generate Code</a><br>";
 
 echo '<h3>Variable</h3>';
 echo 'php_uname(): '.php_uname().'<br>';
@@ -65,6 +64,8 @@ echo 'time: '.($time).' ms<br>';
 echo '<hr>';
 
 echo '<h3>Time</h3>';
+echo 'Date time: '.date('c');
+echo '<br>';
 echo 'time: '.time();
 echo '<br>';
 echo 'microtime: '.microtime(true);
