@@ -19,7 +19,7 @@ $client->setScopes([Google_Service_Gmail::GMAIL_READONLY, Google_Service_Gmail::
 $client->setAuthConfig('credentials.json');
 $client->setAccessType('offline');
 $client->setPrompt('select_account consent');
-$client->setRedirectUri("https://pchessle.tk/test/google_oauth/get-token.php");
+$client->setRedirectUri("https://pchessle.tk/test/google-oauth/get-token.php");
 
 // Exchange authorization code for an access token.
 $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
