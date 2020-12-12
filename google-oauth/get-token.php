@@ -2,7 +2,7 @@
 session_start();
 require __DIR__ . '/vendor/autoload.php';
 
-if(!isset($_GET['code']) || !isset($_GET['scope']) || !isset($_GET['hook'])) {
+if(!isset($_GET['code']) || !isset($_GET['scope'])) {
     echo "Unauthorized Page";
     exit();
 }
