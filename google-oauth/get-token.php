@@ -1,14 +1,20 @@
 <?php
 session_start();
-require __DIR__ . '/vendor/autoload.php';
-
 if(!isset($_GET['code']) || !isset($_GET['scope'])) {
     echo "Unauthorized Page";
     exit();
 }
 
-$company_id = $_SESSION['company_id'];
 $authCode = $_GET['code'];
-
-echo "<script>window.opener.get_code('{$authCode}');window.close();</script>";
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Token</title>
+</head>
+<body>
+    <input type="text" name="code" value="<?php echo $authCode;?>" style="padding:10px;width:600px;font-size:14px;" onclick="this.select();">
+</body>
+</html>

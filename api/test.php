@@ -28,9 +28,9 @@
         CURLOPT_COOKIE => $strCookie,
         
         CURLOPT_HTTPHEADER => array(
-        "cache-control: no-cache",
-        "content-type: application/x-www-form-urlencoded",
-        "Origin: {$origin}"
+            "cache-control: no-cache",
+            "content-type: application/x-www-form-urlencoded",
+            "Origin: {$origin}"
         ),
     ));
 
