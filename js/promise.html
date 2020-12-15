@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" name="aa">
+    <script>
+        async function test(endpoint) {
+            const res = await fetch(endpoint);
+            let data = await res.json();
+            return data;
+        }
+
+        test("https://pchessle.tk/test/api/end-point/test-api.php")
+        .then(data => console.log(data))
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                // document.getElementById("txtHint").innerHTML = this.responseText;
+                var res = JSON.parse(this.responseText);
+                console.log(res)
+            }
+        };
+        xmlhttp.open("GET", "https://pchessle.tk/test/api/end-point/test-api.php?q=test", true);
+        xmlhttp.send();
+
+    </script>
+</body>
+</html>
