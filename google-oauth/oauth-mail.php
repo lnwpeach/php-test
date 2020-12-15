@@ -13,7 +13,7 @@ function getClient()
 {
     $client = new Google_Client();
     $client->setApplicationName('TRCLOUD');
-    $client->setScopes([Google_Service_Gmail::GMAIL_READONLY, Google_Service_Gmail::GMAIL_SEND]);
+    $client->setScopes([Google_Service_Oauth2::USERINFO_EMAIL, Google_Service_Oauth2::USERINFO_PROFILE, Google_Service_Oauth2::OPENID, Google_Service_Gmail::GMAIL_SEND]);
     $client->setAuthConfig('credentials.json');
     $client->setAccessType('offline');
     $client->setPrompt('select_account consent');
@@ -62,7 +62,9 @@ function getClient()
 
 // Get the API client and construct the service object.
 $client = getClient();
-$service = new Google_Service_Gmail($client);
+$service = new Google_Service_Oauth2($client);
+$profile = $service->userinfo->get();
+$email = $profile['email'];
 
 // Print the labels in the user's account.
 $user = 'me';
