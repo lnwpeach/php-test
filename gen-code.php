@@ -16,7 +16,8 @@
     }
 
     function gen_pass_sign($len) {
-        $sign_arr = [33, 35, 36, 38, 43, 45, 46, 47, 61, 95];
+        // Symbol ! # $ % & * + , - . / < = > @ ^ _ 
+        $sign_arr = [33, 35, 36, 37, 38, 42, 43, 44, 45, 46, 47, 60, 61, 62, 64, 94, 95];
         $str = "";
         $sign_count = 0;
         $sign_max = floor($len * 0.25);
@@ -24,7 +25,7 @@
             $rand_up = rand(65, 90); // A-Z
             $rand_low = rand(97, 122); // a-z
             $rand_num = rand(48, 57); // 0-9
-            $rand_sign = $sign_arr[rand(0, count($sign_arr)-1)]; // Sign !#$&+-./=_
+            $rand_sign = $sign_arr[rand(0, count($sign_arr)-1)];
         
             $rand_arr = [$rand_up, $rand_low, $rand_num, $rand_sign];
             $rand_sel = rand(0, count($rand_arr)-1);
@@ -73,7 +74,8 @@
     echo '<br>';
 
     for($i=0;$i<5;$i++) {
-        echo gen_pass_sign(18).'<br>';
+        $pass = gen_pass_sign(18);
+        echo htmlspecialchars($pass).'<br>';
     }
 
     echo '<br>';
