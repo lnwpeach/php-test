@@ -11,6 +11,7 @@ echo "<a href='gen-code.php'>Generate Code</a><br>";
 
 echo '<h3>Variable</h3>';
 echo 'php_uname(): '.php_uname().'<br>';
+echo 'php_sapi_name(): '.php_sapi_name().'<br>';
 echo 'PHP_OS: '.PHP_OS.'<br>';
 echo '__DIR__: '.__DIR__.'<br>';
 echo 'DOCUMENT_ROOT: '.$_SERVER['DOCUMENT_ROOT'].'<br>';
