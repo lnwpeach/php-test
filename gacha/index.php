@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-$chance = ['UUR' => 0.1, 'UR' => 0.5, 'SSR' => 1, 'SR' => 5, 'R' => 30, 'N' => 100];
 ?>
 
 <html>
@@ -26,36 +25,38 @@ $chance = ['UUR' => 0.1, 'UR' => 0.5, 'SSR' => 1, 'SR' => 5, 'R' => 30, 'N' => 1
         </thead>
         <tbody id='item_total'>
             <tr>
-                <td>N</td>
-                <td>66.4</td>
-                <td name='n_qty'></td>
-            </tr>
-            <tr>
-                <td>R</td>
-                <td>30</td>
+                <td>1</td>
+                <td>0</td>
                 <td name='r_qty'></td>
             </tr>
             <tr>
-                <td>SR</td>
-                <td>5</td>
+                <td>2</td>
+                <td>0</td>
                 <td name='sr_qty'></td>
             </tr>
             <tr>
-                <td>SSR</td>
-                <td>1</td>
+                <td>3</td>
+                <td>94.3</td>
                 <td name='ssr_qty'></td>
             </tr>
             <tr>
-                <td>UR</td>
-                <td>0.5</td>
+                <td>4</td>
+                <td>5.1</td>
                 <td name='ur_qty'></td>
             </tr>
             <tr>
-                <td>UUR</td>
-                <td>0.1</td>
+                <td>5</td>
+                <td>0.6</td>
                 <td name='uur_qty'></td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Sum</td>
+                <td name='sum_qty'></td>
+            </tr>
+        </tfoot>
     </table>
 
     <br>
@@ -116,12 +117,11 @@ function retrieve() {
     }
 
     if(reward_total) {
-        $("[name=n_qty]").text(reward_total.N);
-        $("[name=r_qty]").text(reward_total.R);
-        $("[name=sr_qty]").text(reward_total.SR);
-        $("[name=ssr_qty]").text(reward_total.SSR);
-        $("[name=ur_qty]").text(reward_total.UR);
-        $("[name=uur_qty]").text(reward_total.UUR);
+        $("[name=r_qty]").text(reward_total[1]);
+        $("[name=sr_qty]").text(reward_total[2]);
+        $("[name=ssr_qty]").text(reward_total[3]);
+        $("[name=ur_qty]").text(reward_total[4]);
+        $("[name=uur_qty]").text(reward_total[5]);
     } else {
         $("[name=n_qty]").text(0);
         $("[name=r_qty]").text(0);
@@ -130,6 +130,12 @@ function retrieve() {
         $("[name=ur_qty]").text(0);
         $("[name=uur_qty]").text(0);
     }
+
+    var sum = 0;
+    for(var i=1;i<=5;i++) {
+        sum += reward_total[i]*1;
+    }
+    $("[name=sum_qty]").text(sum || 0);
 }
 
 function clear_reward() {
