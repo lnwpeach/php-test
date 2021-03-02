@@ -1,7 +1,7 @@
 <?php
 /*
 $aa = "aaaa";
-echo "aa: ".$aa;
+echo "aa: ".$aa."<br>";
 echo "<br><br>";
 */
 
@@ -25,11 +25,12 @@ echo ((float)mt_rand()/(float)getrandmax()*100).'<br>';
 echo '<hr>';
 
 echo '<h3>hash</h3>';
-$aa = hash('md5', '1234');
+$pass = "1234";
+$aa = hash('md5', $pass);
 echo 'md5: '.$aa.'<br>';
-$aa = hash('sha256', '1234');
+$aa = hash('sha256', $pass);
 echo 'sha256: '.$aa.'<br>';
-$aa = hash('sha512', '1234');
+$aa = hash('sha512', $pass);
 echo 'sha512: '.$aa.'<br>';
 echo '<hr>';
 
@@ -44,9 +45,9 @@ echo '<br>';
 echo 'sha256<br>';
 $salt = '$5$rounds=6139$'.$ranid;
 echo 'salt: '.$salt.'<br>';
-$aa = crypt('1234', $salt);
+$aa = crypt($pass, $salt);
 echo $aa.'<br>';
-$bb = crypt('1234', $aa);
+$bb = crypt($pass, $aa);
 echo $bb.'<br>';
 echo '<br>';
 
@@ -54,9 +55,9 @@ echo '<br>';
 echo 'sha512<br>';
 $salt = '$6$rounds=6139$'.$ranid;
 echo 'salt: '.$salt.'<br>';
-$aa = crypt('1234', $salt);
+$aa = crypt($pass, $salt);
 echo $aa.'<br>';
-$bb = crypt('1234', $aa);
+$bb = crypt($pass, $aa);
 echo $bb.'<br>';
 
 $ed = microtime(true);
