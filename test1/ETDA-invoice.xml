@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:TaxInvoice_CrossIndustryInvoice xmlns:rsm="urn:etda:uncefact:data:standard:TaxInvoice_CrossIndustryInvoice:2" xmlns:ram="urn:etda:uncefact:data:standard:TaxInvoice_ReusableAggregateBusinessInformationEntity:2" xmlns:ns3="http://www.w3.org/2000/09/xmldsig#">
+    <rsm:ExchangedDocumentContext>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+            <ram:ID schemeAgencyID="ETDA" schemeVersionID="v2.0">ER3-2560</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:ExchangedDocumentContext>
+    <rsm:ExchangedDocument>
+        <ram:ID>IV2105010001</ram:ID>
+        <ram:Name>ใบกำกับภาษี</ram:Name>
+        <ram:TypeCode>388</ram:TypeCode>
+        <ram:IssueDateTime>2021-04-30T17:00:00.000Z</ram:IssueDateTime>
+        <ram:CreationDateTime>2021-03-24T03:23:32.000Z</ram:CreationDateTime>
+        <ram:IncludedNote>
+            <ram:Subject>หมายเหตุ</ram:Subject>
+            <ram:Content> 
+            
+	aa a	efsadfs		df	111
+b 		a	b 2		22</ram:Content>
+        </ram:IncludedNote>
+    </rsm:ExchangedDocument>
+    <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+            <ram:SellerTradeParty>
+                <ram:Name>บริษัท พอล เทค (เอเซีย) จำกัด</ram:Name>
+                <ram:SpecifiedTaxRegistration>
+                    <ram:ID schemeID="TXID">012554700176600000</ram:ID>
+                </ram:SpecifiedTaxRegistration>
+                <ram:DefinedTradeContact>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID>narisara.s@hmp.co.th</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>+66-25841814</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>11120</ram:PostcodeCode>
+                    <ram:LineOne>200  Moo. 4, Jasmine International Tower, 6th Floor, Room 607C, </ram:LineOne>
+                    <ram:LineTwo>Chaengwattana Road, Pakkred, Pakkred, Nonthaburi 11120, Thailand</ram:LineTwo>
+                    <ram:CityName>1206</ram:CityName>
+                    <ram:CitySubDivisionName>120601</ram:CitySubDivisionName>
+                    <ram:CountryID>TH</ram:CountryID>
+                    <ram:CountrySubDivisionID>12</ram:CountrySubDivisionID>
+                    <ram:BuildingNumber>200</ram:BuildingNumber>
+                </ram:PostalTradeAddress>
+            </ram:SellerTradeParty>
+            <ram:BuyerTradeParty>
+                <ram:Name>J.I.B. Computer Group Co., Ltd.</ram:Name>
+                <ram:SpecifiedTaxRegistration>
+                    <ram:ID schemeID="TXID">013554400528100082</ram:ID>
+                </ram:SpecifiedTaxRegistration>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>-</ram:PersonName>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID>6006021410148@kmutnb.ac.th</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>+66-123456789</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>12130</ram:PostcodeCode>
+                    <ram:LineOne>99 SB 172 Room, 2nd Floor, Moo8, Phaholyothin Rd., Kukhot, Lamlukka, Pathumtani 12130</ram:LineOne>
+                    <ram:LineTwo>-</ram:LineTwo>
+                    <ram:CityName>1306</ram:CityName>
+                    <ram:CitySubDivisionName>130601</ram:CitySubDivisionName>
+                    <ram:CountryID>TH</ram:CountryID>
+                    <ram:CountrySubDivisionID>13</ram:CountrySubDivisionID>
+                    <ram:BuildingNumber>99</ram:BuildingNumber>
+                </ram:PostalTradeAddress>
+            </ram:BuyerTradeParty>
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery>
+            <ram:ShipToTradeParty>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>12130</ram:PostcodeCode>
+                    <ram:LineOne>99 SB 172 Room, 2nd Floor, Moo8, Phaholyothin Rd., Kukhot, Lamlukka, Pathumtani 12130</ram:LineOne>
+                    <ram:LineTwo>-</ram:LineTwo>
+                    <ram:CityName>1306</ram:CityName>
+                    <ram:CitySubDivisionName>130601</ram:CitySubDivisionName>
+                    <ram:CountryID>TH</ram:CountryID>
+                    <ram:CountrySubDivisionID>13</ram:CountrySubDivisionID>
+                    <ram:BuildingNumber>99</ram:BuildingNumber>
+                </ram:PostalTradeAddress>
+            </ram:ShipToTradeParty>
+            <ram:ShipFromTradeParty>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>11120</ram:PostcodeCode>
+                    <ram:LineOne>200  Moo. 4, Jasmine International Tower, 6th Floor, Room 607C, </ram:LineOne>
+                    <ram:LineTwo>Chaengwattana Road, Pakkred, Pakkred, Nonthaburi 11120, Thailand</ram:LineTwo>
+                    <ram:CityName>1206</ram:CityName>
+                    <ram:CitySubDivisionName>120601</ram:CitySubDivisionName>
+                    <ram:CountryID>TH</ram:CountryID>
+                    <ram:CountrySubDivisionID>12</ram:CountrySubDivisionID>
+                    <ram:BuildingNumber>200</ram:BuildingNumber>
+                </ram:PostalTradeAddress>
+            </ram:ShipFromTradeParty>
+        </ram:ApplicableHeaderTradeDelivery>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode>THB</ram:InvoiceCurrencyCode>
+            <ram:ApplicableTradeTax>
+                <ram:TypeCode>VAT</ram:TypeCode>
+                <ram:CalculatedRate>7.00</ram:CalculatedRate>
+                <ram:BasisAmount>93.46</ram:BasisAmount>
+                <ram:CalculatedAmount>6.54</ram:CalculatedAmount>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeAllowanceCharge>
+                <ram:ChargeIndicator>false</ram:ChargeIndicator>
+                <ram:ActualAmount>0.00</ram:ActualAmount>
+            </ram:SpecifiedTradeAllowanceCharge>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:LineTotalAmount>93.46</ram:LineTotalAmount>
+                <ram:TaxBasisTotalAmount>93.46</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount>6.54</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>100.00</ram:GrandTotalAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        </ram:ApplicableHeaderTradeSettlement>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>1</ram:LineID>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedTradeProduct>
+                <ram:Name>Boso Sheet - Junior Size 1*5m.</ram:Name>
+            </ram:SpecifiedTradeProduct>
+            <ram:SpecifiedLineTradeAgreement>
+                <ram:GrossPriceProductTradePrice>
+                    <ram:ChargeAmount>100.00</ram:ChargeAmount>
+                </ram:GrossPriceProductTradePrice>
+            </ram:SpecifiedLineTradeAgreement>
+            <ram:SpecifiedLineTradeDelivery>
+                <ram:BilledQuantity unitCode="">1</ram:BilledQuantity>
+            </ram:SpecifiedLineTradeDelivery>
+            <ram:SpecifiedLineTradeSettlement>
+                <ram:ApplicableTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
+                    <ram:CalculatedRate>7.00</ram:CalculatedRate>
+                    <ram:BasisAmount>93.46</ram:BasisAmount>
+                    <ram:CalculatedAmount>6.54</ram:CalculatedAmount>
+                </ram:ApplicableTradeTax>
+                <ram:SpecifiedTradeAllowanceCharge>
+                    <ram:ChargeIndicator>false</ram:ChargeIndicator>
+                    <ram:ActualAmount>0.00</ram:ActualAmount>
+                </ram:SpecifiedTradeAllowanceCharge>
+                <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    <ram:TaxTotalAmount>7</ram:TaxTotalAmount>
+                    <ram:NetLineTotalAmount currencyID="THB">100</ram:NetLineTotalAmount>
+                    <ram:NetIncludingTaxesLineTotalAmount currencyID="THB">107</ram:NetIncludingTaxesLineTotalAmount>
+                </ram:SpecifiedTradeSettlementLineMonetarySummation>
+            </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:TaxInvoice_CrossIndustryInvoice>
+
