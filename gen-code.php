@@ -67,24 +67,26 @@
         return $str;
     }
 
+    echo '<h3>Upper, Lower, Number - 18 Char</h3>';
+
     for($i=0;$i<5;$i++) {
         echo gen_pass(18).'<br>';
     }
 
-    echo '<br>';
+    echo '<h3>Upper, Lower, Number, Symbol - 18 Char</h3>';
 
     for($i=0;$i<5;$i++) {
         $pass = gen_pass_sign(18);
         echo htmlspecialchars($pass).'<br>';
     }
 
-    echo '<br>';
+    echo '<h3>Upper - 16 Char 4 Group</h3>';
 
     for($i=0;$i<5;$i++) {
         echo gen_code(16).'<br>';
     }
 
-    echo '<br>';
+    echo '<h3>Number 6 Digit</h3>';
 
     for($i=0;$i<5;$i++) {
         echo gen_num(6).'<br>';
